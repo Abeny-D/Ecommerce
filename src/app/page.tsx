@@ -8,7 +8,7 @@ export default async function Home() {
 
     const products = await stripe.products.list({
         expand: ["data.default_price"],
-        limit: 9,
+        limit: 5,
     });
 
 
@@ -39,8 +39,8 @@ export default async function Home() {
 
                     />
                 </div>
-                <section className="py-8"><Carousel/></section>
             </section>
+            <section className="max-w-7xl mx-auto"><Carousel products={products.data}/></section>
 
         </div>
     );

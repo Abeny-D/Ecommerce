@@ -2,6 +2,7 @@ import Link from "next/link";
 
 export function NavBar() {
 
+
     return (
         <nav className="sticky top-0 z-50 bg-white shadow">
             <div className="container mx-auto flex items-center justify-between px-4 py-4">
