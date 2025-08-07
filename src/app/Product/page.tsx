@@ -8,8 +8,8 @@ export default async function ProductPage(){
     });
 
     return (
-        <div>
-            <h1>Products list</h1>
+        <div className="pb-8 max-w-7xl mx-auto">
+            <h1 className="text-3xl font-bold leading-none tracking-tight text-foreground text-center mb-8 p-4" >Products list</h1>
             <ProductList products={products.data}></ProductList>
         </div>
     )
